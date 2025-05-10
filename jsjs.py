@@ -1,5 +1,5 @@
 import subprocess
-import os
+import platform
 from turtle import *
 from math import *
 
