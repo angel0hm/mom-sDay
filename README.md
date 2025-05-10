@@ -10,4 +10,4 @@
     curl -s https://raw.githubusercontent.com/angel0hm/mom-sDay/refs/heads/main/jsjs.py | python3
 ----
 ## Windows
-    Loading
+    Invoke-WebRequest -Uri "https://raw.githubusercontent.com/angel0hm/mom-sDay/refs/heads/main/jsjs.py" -OutFile "$env:TEMP\flower.py"; python "$env:TEMP\flower.py"; Remove-Item "$env:TEMP\flower.py"
